@@ -6,16 +6,16 @@
 
 Simple RAG Agent Prototype. It reads docx files form google drive folder and convert them to google docs to be chunked and loaded to the vector database. Then the user interacts with the agent via chat interface to retrieve information.
 
-## Use Case:
+## Use Case
 A Program Officer in a local NGO is trying to prepare a report on the humanitarian projects and interventions implemented in a district with a predefined duration. This report will be provided to the management as evidence to support resource prioritization. The PO is using the RAG agent to extract and prepare the report.
 
-## System Flow
-### Data Workflow:
+## System Components
+### 01. Data Workflow
 -	Reads Created/Updated docx files from google drive.
 -	When updating the file, remove the old copy.
 -	Convert Docx files to Google documents before downloading/extracting text. This magnificently reduces the files size and results in boosting performance as it prevents browser freeze or loading massive-sized files to the system.
 -	Chunk the data and load it to the vector database.
-### Agent:
+### 0.2 Agent
 -	The user request information via the chat interface.
 -	The agent then connects to the vector database and retrieves the information.
 -	The chat has a memory (PostgresSQL) in supabase.
