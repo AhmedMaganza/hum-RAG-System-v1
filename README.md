@@ -4,8 +4,8 @@
 > 
 ### *Version 1.0* (Simple RAG Agent Prototype)
 
-<img width="975" height="533" alt="image" src="1.png" />
-<img width="975" height="333" alt="image" src="2.png" />
+<img width="975" height="533" alt="image" src="01.png" />
+<img width="975" height="333" alt="image" src="02.png" />
 
 Simple RAG Agent Prototype. It reads docx files form google drive folder and convert them to google docs to be chunked and loaded to the vector database. Then the user interacts with the agent via chat interface to retrieve information.
 
@@ -34,7 +34,7 @@ Testing and Evaluation:
 -	No data governance
 
 ## *version 2.0* (State-Driven Approach)
-<img width="975" height="507" alt="image" src="3.png" />
+<img width="975" height="507" alt="image" src="03.png" />
 <br>
 A transition from the old trigger-based setup to a robust, bulk-processing RAG agent.
 
@@ -45,8 +45,8 @@ A transition from the old trigger-based setup to a robust, bulk-processing RAG a
 
 
 ## *version 2.0.1*
-<img width="975" height="473" alt="image" src="4.png" />
-<img width="975" height="232" alt="image" src="5.png" />
+<img width="975" height="473" alt="image" src="04.png" />
+<img width="975" height="232" alt="image" src="05.png" />
 
 ### New Features:
 -	An error-handler for corrupted/empty files.
