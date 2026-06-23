@@ -1,8 +1,11 @@
-# AI-Powered RAG System v1.0
-#### Simple RAG Agent Prototype
+# AI-Powered Knowledge Management RAG Agent 
+> [!NOTE]
+> I am currently rebuilding and synthesizing my professional data pipelines and enterprise models into this public portfolio. To respect strict institutional data governance and non-disclosure agreements, all proprietary datasets are being meticulously anonymized or replaced with high-fidelity synthetic data before deployment. Stay tuned for regular updates!
+> 
+### *Version 1.0* (Simple RAG Agent Prototype)
 
-<img width="975" height="533" alt="image" src="https://github.com/user-attachments/assets/9a3815a7-50ee-496b-bc37-8f8e8a28ad4c" />
-<img width="975" height="333" alt="image" src="https://github.com/user-attachments/assets/b51b60b5-e273-4b1c-b3ac-dd098419bfb2" />
+<img width="975" height="533" alt="image" src="1.png" />
+<img width="975" height="333" alt="image" src="2.png" />
 
 Simple RAG Agent Prototype. It reads docx files form google drive folder and convert them to google docs to be chunked and loaded to the vector database. Then the user interacts with the agent via chat interface to retrieve information.
 
@@ -29,5 +32,28 @@ Testing and Evaluation:
 -	No error-handling whatsoever (Empty google drive folder, corrupted files …)
 -	No guardrails and security.
 -	No data governance
+
+## *version 2.0* (State-Driven Approach)
+<img width="975" height="507" alt="image" src="3.png" />
+<br>
+A transition from the old trigger-based setup to a robust, bulk-processing RAG agent.
+
+### New Features:
+-	Change the flow from "Event-Driven" (one file at a time) to "State-Driven" (scanning and checking google drive folder).
+-	Based on a schedule trigger, It searches for files added/updated to the google drive folder (determine via metadata).
+-	Notify the user/team of files added/updated via Slack.
+
+
+## *version 2.0.1*
+<img width="975" height="473" alt="image" src="4.png" />
+<img width="975" height="232" alt="image" src="5.png" />
+
+### New Features:
+-	An error-handler for corrupted/empty files.
+-	An error-handler for empty google drive folder.
+-	Manage rate limits (Wait Node)
+-	meta-data tagging (to decide whether to add data to the vector database)
+-	Added a RESET Workflow (remove tags from “appProperties”, “properties”)
+
 
 
